@@ -78,7 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': 'xe',
-        'USER': 'C##MEDSERV',
+        'USER': 'evmedserv',
         'PASSWORD': '123',
         'HOST': '',
         'PORT': '',
@@ -86,12 +86,7 @@ DATABASES = {
 }
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+
 
 
 # Password validation
