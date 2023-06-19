@@ -21,11 +21,10 @@
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Convenio</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Carrito</a></li>
+        <li class="nav-item"><a href="/static/templates/home.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/static/templates/nosotros.html" class="nav-link">Nosotros</a></li>
+        <li class="nav-item"><a href="/static/templates/convenio.html" class="nav-link">Convenio</a></li>
+        <li class="nav-item"><a href="/static/templates/productos.html" class="nav-link">Carrito</a></li>
         <button type="button" class="btn btn-primary" disabled>Login</button>
       </ul>
     </header>
@@ -55,24 +54,68 @@
     <br>
     <br>
     <br>
-    <center><p class="fs-3">Productos</p></center>
-    <br>
-    <div class="row row-cols-1 row-cols-md-2 g-2">
-      <div class="col-sm-5 mb-3 mb-sm-0">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+    <div class="container px-4 py-5" id="custom-cards">
+      <center><p class="fs-3">Productos</p></center>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/img/fondo1.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Maquinas.</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Maquinaria medica</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>24</small>
+                </li>
+                
+              </ul>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div> 
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/img/fondo2.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Servicios</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Servicios</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>5</small>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-5">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/static/img/fondo3.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Accesorios.</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+               
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Accesorios</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>15</small>
+                </li>
+              </ul>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
           </div>
         </div>
       </div>
