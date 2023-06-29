@@ -17,3 +17,7 @@ def nosotros(request):
 def productos(request):
 
     return render(request,'core/productos.html')
+
+def login(request):
+
+    return render(request,'core/login.html')
