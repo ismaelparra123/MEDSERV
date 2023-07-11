@@ -10,10 +10,6 @@ def convenios(request):
 
     return render(request,'core/convenios.html')
 
-def nosotros(request):
-
-    return render(request,'core/nosotros.html')
-
 def productos(request):
 
     return render(request,'core/productos.html')
@@ -21,3 +17,16 @@ def productos(request):
 def login(request):
 
     return render(request,'core/login.html')
+
+def registro(request):
+
+    return render(request,'core/registro.html')
+
+def carrito (request):
+    return render(request, 'core/carrito.html')
+
+def detalle_productores (request):
+    return render(request,'core/detalle_productores.html')
+
+def API (request):
+    return render(request, 'core/API.html')
